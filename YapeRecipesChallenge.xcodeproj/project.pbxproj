@@ -11,9 +11,25 @@
 		ED1A894E2A22A24000ED4D13 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1A894D2A22A24000ED4D13 /* ContentView.swift */; };
 		ED1A89502A22A24200ED4D13 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED1A894F2A22A24200ED4D13 /* Assets.xcassets */; };
 		ED1A89532A22A24200ED4D13 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED1A89522A22A24200ED4D13 /* Preview Assets.xcassets */; };
-		ED1A895D2A22A24200ED4D13 /* YapeRecipesChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1A895C2A22A24200ED4D13 /* YapeRecipesChallengeTests.swift */; };
 		ED1A89672A22A24200ED4D13 /* YapeRecipesChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1A89662A22A24200ED4D13 /* YapeRecipesChallengeUITests.swift */; };
 		ED1A89692A22A24200ED4D13 /* YapeRecipesChallengeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1A89682A22A24200ED4D13 /* YapeRecipesChallengeUITestsLaunchTests.swift */; };
+		ED1A897E2A22A2F600ED4D13 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1A897D2A22A2F600ED4D13 /* Recipe.swift */; };
+		ED1A89852A22A81500ED4D13 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1A89842A22A81500ED4D13 /* HomeView.swift */; };
+		ED1A89962A22E04600ED4D13 /* DataParserServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1A89952A22E04600ED4D13 /* DataParserServiceProtocol.swift */; };
+		ED1A89992A22E0B700ED4D13 /* DataParserServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1A89982A22E0B700ED4D13 /* DataParserServiceTests.swift */; };
+		ED1A899C2A23EA4D00ED4D13 /* APIManagerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1A899B2A23EA4D00ED4D13 /* APIManagerService.swift */; };
+		ED1A899F2A23EA8E00ED4D13 /* RequestProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1A899E2A23EA8E00ED4D13 /* RequestProtocol.swift */; };
+		ED1A89A12A23EB3A00ED4D13 /* RequestType.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1A89A02A23EB3A00ED4D13 /* RequestType.swift */; };
+		ED1A89A32A23EC1F00ED4D13 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1A89A22A23EC1F00ED4D13 /* Constants.swift */; };
+		ED1A89A82A23FAE200ED4D13 /* MockRecipes.json in Resources */ = {isa = PBXBuildFile; fileRef = ED1A89A72A23FAE200ED4D13 /* MockRecipes.json */; };
+		ED1A89AB2A24001500ED4D13 /* RequestProtocolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1A89AA2A24001500ED4D13 /* RequestProtocolTests.swift */; };
+		ED1A89B02A25144A00ED4D13 /* RequestManagerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1A89AF2A25144A00ED4D13 /* RequestManagerService.swift */; };
+		ED1A89B22A25172600ED4D13 /* APIManagerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1A89B12A25172600ED4D13 /* APIManagerMock.swift */; };
+		ED1A89B42A25175A00ED4D13 /* RecipeRequestMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1A89B32A25175A00ED4D13 /* RecipeRequestMock.swift */; };
+		ED1A89B62A2517A800ED4D13 /* RequestManagerServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1A89B52A2517A800ED4D13 /* RequestManagerServiceTests.swift */; };
+		ED1A89B92A251D7B00ED4D13 /* MockURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1A89B82A251D7B00ED4D13 /* MockURLSession.swift */; };
+		ED1A89BC2A25485000ED4D13 /* TestURLProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1A89BB2A25485000ED4D13 /* TestURLProtocol.swift */; };
+		ED1A89BE2A254B2700ED4D13 /* APIManagerServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1A89BD2A254B2700ED4D13 /* APIManagerServiceTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,10 +56,26 @@
 		ED1A894F2A22A24200ED4D13 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ED1A89522A22A24200ED4D13 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		ED1A89582A22A24200ED4D13 /* YapeRecipesChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YapeRecipesChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		ED1A895C2A22A24200ED4D13 /* YapeRecipesChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YapeRecipesChallengeTests.swift; sourceTree = "<group>"; };
 		ED1A89622A22A24200ED4D13 /* YapeRecipesChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YapeRecipesChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED1A89662A22A24200ED4D13 /* YapeRecipesChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YapeRecipesChallengeUITests.swift; sourceTree = "<group>"; };
 		ED1A89682A22A24200ED4D13 /* YapeRecipesChallengeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YapeRecipesChallengeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		ED1A897D2A22A2F600ED4D13 /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
+		ED1A89842A22A81500ED4D13 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		ED1A89952A22E04600ED4D13 /* DataParserServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataParserServiceProtocol.swift; sourceTree = "<group>"; };
+		ED1A89982A22E0B700ED4D13 /* DataParserServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataParserServiceTests.swift; sourceTree = "<group>"; };
+		ED1A899B2A23EA4D00ED4D13 /* APIManagerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManagerService.swift; sourceTree = "<group>"; };
+		ED1A899E2A23EA8E00ED4D13 /* RequestProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestProtocol.swift; sourceTree = "<group>"; };
+		ED1A89A02A23EB3A00ED4D13 /* RequestType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestType.swift; sourceTree = "<group>"; };
+		ED1A89A22A23EC1F00ED4D13 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		ED1A89A72A23FAE200ED4D13 /* MockRecipes.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = MockRecipes.json; sourceTree = "<group>"; };
+		ED1A89AA2A24001500ED4D13 /* RequestProtocolTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestProtocolTests.swift; sourceTree = "<group>"; };
+		ED1A89AF2A25144A00ED4D13 /* RequestManagerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestManagerService.swift; sourceTree = "<group>"; };
+		ED1A89B12A25172600ED4D13 /* APIManagerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManagerMock.swift; sourceTree = "<group>"; };
+		ED1A89B32A25175A00ED4D13 /* RecipeRequestMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeRequestMock.swift; sourceTree = "<group>"; };
+		ED1A89B52A2517A800ED4D13 /* RequestManagerServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestManagerServiceTests.swift; sourceTree = "<group>"; };
+		ED1A89B82A251D7B00ED4D13 /* MockURLSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLSession.swift; sourceTree = "<group>"; };
+		ED1A89BB2A25485000ED4D13 /* TestURLProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestURLProtocol.swift; sourceTree = "<group>"; };
+		ED1A89BD2A254B2700ED4D13 /* APIManagerServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManagerServiceTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +126,12 @@
 		ED1A894A2A22A24000ED4D13 /* YapeRecipesChallenge */ = {
 			isa = PBXGroup;
 			children = (
-				ED1A894B2A22A24000ED4D13 /* YapeRecipesChallengeApp.swift */,
-				ED1A894D2A22A24000ED4D13 /* ContentView.swift */,
+				ED1A89752A22A25400ED4D13 /* App */,
+				ED1A897B2A22A28E00ED4D13 /* Resources */,
+				ED1A89762A22A25A00ED4D13 /* Models */,
+				ED1A89782A22A26F00ED4D13 /* Views */,
+				ED1A89792A22A27700ED4D13 /* ViewModels */,
+				ED1A897A2A22A28900ED4D13 /* Services */,
 				ED1A894F2A22A24200ED4D13 /* Assets.xcassets */,
 				ED1A89512A22A24200ED4D13 /* Preview Content */,
 			);
@@ -113,7 +149,10 @@
 		ED1A895B2A22A24200ED4D13 /* YapeRecipesChallengeTests */ = {
 			isa = PBXGroup;
 			children = (
-				ED1A895C2A22A24200ED4D13 /* YapeRecipesChallengeTests.swift */,
+				ED1A89BA2A25484300ED4D13 /* Utilities */,
+				ED1A89AE2A25125C00ED4D13 /* Mocks */,
+				ED1A89A92A23FFFA00ED4D13 /* Network */,
+				ED1A89972A22E09F00ED4D13 /* Services */,
 			);
 			path = YapeRecipesChallengeTests;
 			sourceTree = "<group>";
@@ -125,6 +164,151 @@
 				ED1A89682A22A24200ED4D13 /* YapeRecipesChallengeUITestsLaunchTests.swift */,
 			);
 			path = YapeRecipesChallengeUITests;
+			sourceTree = "<group>";
+		};
+		ED1A89752A22A25400ED4D13 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				ED1A894B2A22A24000ED4D13 /* YapeRecipesChallengeApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		ED1A89762A22A25A00ED4D13 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				ED1A897D2A22A2F600ED4D13 /* Recipe.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		ED1A89782A22A26F00ED4D13 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				ED1A897F2A22A41800ED4D13 /* Home */,
+				ED1A89802A22A77600ED4D13 /* Details */,
+				ED1A89812A22A7B000ED4D13 /* Map */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		ED1A89792A22A27700ED4D13 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		ED1A897A2A22A28900ED4D13 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				ED1A899D2A23EA7A00ED4D13 /* Request */,
+				ED1A899A2A23EA2700ED4D13 /* Networking */,
+				ED1A89942A22E01300ED4D13 /* Data */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		ED1A897B2A22A28E00ED4D13 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				ED1A89A22A23EC1F00ED4D13 /* Constants.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		ED1A897F2A22A41800ED4D13 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				ED1A894D2A22A24000ED4D13 /* ContentView.swift */,
+				ED1A89842A22A81500ED4D13 /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		ED1A89802A22A77600ED4D13 /* Details */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
+		ED1A89812A22A7B000ED4D13 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		ED1A89942A22E01300ED4D13 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				ED1A89952A22E04600ED4D13 /* DataParserServiceProtocol.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		ED1A89972A22E09F00ED4D13 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				ED1A89982A22E0B700ED4D13 /* DataParserServiceTests.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		ED1A899A2A23EA2700ED4D13 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				ED1A899B2A23EA4D00ED4D13 /* APIManagerService.swift */,
+				ED1A89AF2A25144A00ED4D13 /* RequestManagerService.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		ED1A899D2A23EA7A00ED4D13 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				ED1A899E2A23EA8E00ED4D13 /* RequestProtocol.swift */,
+				ED1A89A02A23EB3A00ED4D13 /* RequestType.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		ED1A89A92A23FFFA00ED4D13 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				ED1A89AA2A24001500ED4D13 /* RequestProtocolTests.swift */,
+				ED1A89B52A2517A800ED4D13 /* RequestManagerServiceTests.swift */,
+				ED1A89BD2A254B2700ED4D13 /* APIManagerServiceTests.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		ED1A89AE2A25125C00ED4D13 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				ED1A89B72A251D0D00ED4D13 /* Resources */,
+				ED1A89B12A25172600ED4D13 /* APIManagerMock.swift */,
+				ED1A89B32A25175A00ED4D13 /* RecipeRequestMock.swift */,
+				ED1A89B82A251D7B00ED4D13 /* MockURLSession.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		ED1A89B72A251D0D00ED4D13 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				ED1A89A72A23FAE200ED4D13 /* MockRecipes.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		ED1A89BA2A25484300ED4D13 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				ED1A89BB2A25485000ED4D13 /* TestURLProtocol.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,6 +416,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ED1A89532A22A24200ED4D13 /* Preview Assets.xcassets in Resources */,
+				ED1A89A82A23FAE200ED4D13 /* MockRecipes.json in Resources */,
 				ED1A89502A22A24200ED4D13 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -258,7 +443,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				ED1A894E2A22A24000ED4D13 /* ContentView.swift in Sources */,
+				ED1A89852A22A81500ED4D13 /* HomeView.swift in Sources */,
+				ED1A897E2A22A2F600ED4D13 /* Recipe.swift in Sources */,
+				ED1A89B02A25144A00ED4D13 /* RequestManagerService.swift in Sources */,
 				ED1A894C2A22A24000ED4D13 /* YapeRecipesChallengeApp.swift in Sources */,
+				ED1A899C2A23EA4D00ED4D13 /* APIManagerService.swift in Sources */,
+				ED1A89962A22E04600ED4D13 /* DataParserServiceProtocol.swift in Sources */,
+				ED1A899F2A23EA8E00ED4D13 /* RequestProtocol.swift in Sources */,
+				ED1A89A12A23EB3A00ED4D13 /* RequestType.swift in Sources */,
+				ED1A89A32A23EC1F00ED4D13 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,7 +459,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ED1A895D2A22A24200ED4D13 /* YapeRecipesChallengeTests.swift in Sources */,
+				ED1A89BE2A254B2700ED4D13 /* APIManagerServiceTests.swift in Sources */,
+				ED1A89B92A251D7B00ED4D13 /* MockURLSession.swift in Sources */,
+				ED1A89B62A2517A800ED4D13 /* RequestManagerServiceTests.swift in Sources */,
+				ED1A89992A22E0B700ED4D13 /* DataParserServiceTests.swift in Sources */,
+				ED1A89BC2A25485000ED4D13 /* TestURLProtocol.swift in Sources */,
+				ED1A89AB2A24001500ED4D13 /* RequestProtocolTests.swift in Sources */,
+				ED1A89B22A25172600ED4D13 /* APIManagerMock.swift in Sources */,
+				ED1A89B42A25175A00ED4D13 /* RecipeRequestMock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,0 +1,330 @@
+{
+    "recipes": [
+        {
+            "name": "Pizza Margherita",
+            "country": "Italy",
+            "flag": "🇮🇹",
+            "ingredients": [
+                "1 pizza dough",
+                "1/2 cup tomato sauce",
+                "2 cups mozzarella cheese",
+                "Fresh basil leaves",
+                "Olive oil",
+                "Salt"
+            ],
+            "steps": [
+                "Preheat the oven to 475°F (245°C).",
+                "Roll out the pizza dough into a thin circle.",
+                "Spread the tomato sauce evenly on the dough.",
+                "Sprinkle the mozzarella cheese over the sauce.",
+                "Tear the fresh basil leaves and distribute them on top.",
+                "Drizzle olive oil and sprinkle salt over the pizza.",
+                "Bake in the preheated oven for 12-15 minutes, or until the crust is golden and the cheese is bubbly and slightly browned.",
+                "Remove from the oven, let it cool for a few minutes, and serve."
+            ],
+            "serving_sizes": "1 large pizza",
+            "prep_time": "30 minutes",
+            "image_url": "https://images.unsplash.com/photo-1598023696416-0193a0bcd302?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8UGl6emElMjBNYXJnaGVyaXRhfGVufDB8fDB8fHww&auto=format&fit=crop&w=900&q=60"
+        },
+        {
+            "name": "Sushi Rolls",
+            "country": "Japan",
+            "flag": "🇯🇵",
+            "ingredients": [
+                "Sushi rice",
+                "Nori seaweed sheets",
+                "Assorted fillings (e.g., cucumber, avocado, raw fish)",
+                "Soy sauce",
+                "Pickled ginger",
+                "Wasabi"
+            ],
+            "steps": [
+                "Cook sushi rice according to the package instructions.",
+                "Place a sheet of nori on a bamboo sushi mat.",
+                "Spread a thin layer of sushi rice over the nori, leaving a 1-inch border at the top.",
+                "Add your desired fillings (e.g., cucumber, avocado, raw fish) in a line across the center of the rice.",
+                "Using the sushi mat, roll the nori tightly around the fillings.",
+                "Moisten the top border of the nori with water to seal the roll.",
+                "Slice the roll into bite-sized pieces using a sharp knife.",
+                "Serve with soy sauce, pickled ginger, and wasabi."
+            ],
+            "serving_sizes": "Varies",
+            "prep_time": "45 minutes",
+            "image_url": "https://images.unsplash.com/photo-1564489563601-c53cfc451e93?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHN1c2hpJTIwcm9sbHN8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=900&q=60"
+        },
+        {
+            "name": "Hamburger",
+            "country": "United States",
+            "flag": "🇺🇸",
+            "ingredients": [
+                "1/2 lb ground beef",
+                "Hamburger buns",
+                "Lettuce",
+                "Tomato slices",
+                "Onion slices",
+                "Pickles",
+                "Ketchup",
+                "Mustard",
+                "Salt",
+                "Black pepper"
+            ],
+            "steps": [
+                "Preheat a grill or stovetop skillet over medium-high heat.",
+                "Divide the ground beef into patties and season them with salt and black pepper.",
+                "Cook the patties for about 4-5 minutes per side, or until desired doneness.",
+                "Toast the hamburger buns on the grill or skillet.",
+                "Place the cooked patties on the bottom half of each bun.",
+                "Layer lettuce, tomato slices, onion slices, and pickles on top of the patties.",
+                "Spread ketchup and mustard on the top half of the buns.",
+                "Place the top bun over the fillings to complete the hamburger.",
+                "Serve hot with fries or a side of your choice."
+            ],
+            "serving_sizes": "1 hamburger",
+            "prep_time": "20 minutes",
+            "image_url": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1998&q=80"
+        },
+        {
+            "name": "Pad Thai",
+            "country": "Thailand",
+            "flag": "🇹🇭",
+            "ingredients": [
+                "8 oz rice noodles",
+                "1/4 cup tamarind paste",
+                "3 tbsp fish sauce",
+                "2 tbsp sugar",
+                "2 tbsp vegetable oil",
+                "2 cloves garlic, minced",
+                "8 oz shrimp, peeled and deveined",
+                "2 eggs, beaten",
+                "1 cup bean sprouts",
+                "1/4 cup chopped peanuts",
+                "2 green onions, chopped",
+                "Lime wedges",
+                "Cilantro leaves"
+            ],
+            "steps": [
+                "Soak the rice noodles in warm water for 10-15 minutes until softened. Drain and set aside.",
+                "In a small bowl, whisk together tamarind paste, fish sauce, and sugar. Set aside.",
+                "Heat vegetable oil in a large skillet or wok over medium heat.",
+                "Add minced garlic and cook for 1 minute until fragrant.",
+                "Add shrimp and cook until pink and cooked through, about 2-3 minutes.",
+                "Push the shrimp to one side of the skillet and pour the beaten eggs into the other side. Scramble the eggs until cooked.",
+                "Add the drained rice noodles to the skillet and pour the tamarind sauce over them.",
+                "Toss everything together until the noodles are evenly coated in the sauce.",
+                "Add bean sprouts, chopped peanuts, and green onions. Toss again to combine.",
+                "Remove from heat and garnish with lime wedges and cilantro leaves.",
+                "Serve hot and enjoy!"
+            ],
+            "serving_sizes": "2-3 servings",
+            "prep_time": "30 minutes",
+            "image_url": "https://images.unsplash.com/photo-1637806930600-37fa8892069d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGFkJTIwdGhhaXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=900&q=60"
+        },
+        {
+            "name": "Croissant",
+            "country": "France",
+            "flag": "🇫🇷",
+            "ingredients": [
+                "2 1/4 cups all-purpose flour",
+                "1/4 cup granulated sugar",
+                "1/2 tsp salt",
+                "1 1/4 cups unsalted butter, cold",
+                "1/2 cup cold water",
+                "1 large egg, beaten (for egg wash)",
+                "Chocolate (optional)"
+            ],
+            "steps": [
+                "In a large mixing bowl, whisk together flour, sugar, and salt.",
+                "Cut the cold butter into small cubes and add them to the flour mixture.",
+                "Using a pastry cutter or your hands, cut the butter into the flour until the mixture resembles coarse crumbs.",
+                "Make a well in the center and pour in the cold water.",
+                "Mix the dough until it comes together, then turn it out onto a floured surface.",
+                "Knead the dough for about 5 minutes until smooth and elastic.",
+                "Shape the dough into a rectangle and wrap it in plastic wrap.",
+                "Chill the dough in the refrigerator for at least 1 hour, or overnight.",
+                "Remove the dough from the refrigerator and let it sit at room temperature for a few minutes.",
+                "Roll out the dough into a large rectangle, then fold it into thirds like a letter.",
+                "Turn the dough 90 degrees and repeat the rolling and folding process two more times.",
+                "Wrap the folded dough in plastic wrap and refrigerate for 30 minutes.",
+                "Preheat the oven to 400°F (200°C).",
+                "Roll out the chilled dough into a large rectangle, about 1/4-inch thick.",
+                "Cut the dough into triangles and roll each triangle from the wide end to the tip.",
+                "Place the rolled croissants on a baking sheet lined with parchment paper.",
+                "Brush the croissants with beaten egg for a shiny finish.",
+                "Bake in the preheated oven for 15-20 minutes, or until golden brown.",
+                "If desired, melt some chocolate and drizzle it over the baked croissants.",
+                "Let the croissants cool on a wire rack before serving."
+            ],
+            "serving_sizes": "8 croissants",
+            "prep_time": "2 hours 30 minutes",
+            "image_url": "https://images.unsplash.com/photo-1600521853186-93b88b3a07b0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1335&q=80"
+        },
+        {
+            "name": "Ceviche",
+            "country": "Peru",
+            "flag": "🇵🇪",
+            "ingredients": [
+                "1 lb white fish fillets, cut into small cubes",
+                "1 cup lime juice",
+                "1 red onion, thinly sliced",
+                "1-2 rocoto peppers, deseeded and finely chopped",
+                "1-2 fresh yellow chili peppers, deseeded and finely chopped",
+                "1/2 cup chopped cilantro",
+                "1/4 cup chopped mint leaves",
+                "1 sweet potato, boiled and sliced",
+                "1 ear of corn, boiled and cut into rounds",
+                "Salt",
+                "Black pepper"
+            ],
+            "steps": [
+                "In a glass bowl, combine the fish cubes and lime juice. Make sure the fish is fully covered by the lime juice. Marinate in the refrigerator for about 20 minutes, stirring occasionally.",
+                "Remove the fish from the lime juice and discard the excess liquid.",
+                "In a separate bowl, combine the marinated fish, sliced red onion, rocoto peppers, yellow chili peppers, chopped cilantro, and chopped mint leaves.",
+                "Season with salt and black pepper to taste. Mix well to combine all the ingredients.",
+                "Cover the ceviche and let it sit in the refrigerator for about 15-20 minutes to allow the flavors to meld together.",
+                "Serve the ceviche chilled, accompanied by boiled sweet potato slices and corn rounds.",
+                "Enjoy!"
+            ],
+            "serving_sizes": "4 servings",
+            "prep_time": "40 minutes",
+            "image_url": "https://images.unsplash.com/photo-1533658266890-8bd362930725?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Q2V2aWNoZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=900&q=60"
+        },
+        {
+            "name": "Tacos al Pastor",
+            "country": "Mexico",
+            "flag": "🇲🇽",
+            "ingredients": [
+                "2 lbs pork shoulder, thinly sliced",
+                "1/2 cup pineapple juice",
+                "4 cloves garlic, minced",
+                "2 tbsp achiote paste",
+                "2 tbsp white vinegar",
+                "1 tbsp dried oregano",
+                "1 tsp ground cumin",
+                "1 tsp paprika",
+                "Salt",
+                "Corn tortillas",
+                "Chopped onion",
+                "Chopped cilantro",
+                "Sliced pineapple",
+                "Salsa",
+                "Lime wedges"
+            ],
+            "steps": [
+                "In a large bowl, combine pineapple juice, minced garlic, achiote paste, white vinegar, dried oregano, ground cumin, paprika, and salt.",
+                "Add the sliced pork shoulder to the marinade and mix well. Let it marinate in the refrigerator for at least 2 hours, or overnight for best flavor.",
+                "Preheat a grill or skillet over medium-high heat.",
+                "Cook the marinated pork slices for about 3-4 minutes per side, or until cooked through and slightly charred.",
+                "Warm the corn tortillas on the grill or skillet.",
+                "Assemble the tacos by placing a few slices of cooked pork on each tortilla.",
+                "Top with chopped onion, chopped cilantro, sliced pineapple, salsa, and a squeeze of lime juice.",
+                "Serve hot and enjoy!"
+            ],
+            "serving_sizes": "4-6 servings",
+            "prep_time": "2 hours 30 minutes",
+            "image_url": "https://www.entornoturistico.com/wp-content/uploads/2023/02/3-tacos-al-pastor-1280x720.jpeg"
+        },
+        {
+            "name": "Moussaka",
+            "country": "Greece",
+            "flag": "🇬🇷",
+            "ingredients": [
+                "2 eggplants, sliced",
+                "1 lb ground lamb",
+                "1 onion, chopped",
+                "3 cloves garlic, minced",
+                "1 can diced tomatoes",
+                "1/4 cup tomato paste",
+                "1 tsp dried oregano",
+                "1/2 tsp ground cinnamon",
+                "1/4 tsp ground nutmeg",
+                "Salt",
+                "Black pepper",
+                "2 cups béchamel sauce",
+                "1/2 cup grated Parmesan cheese"
+            ],
+            "steps": [
+                "Preheat the oven to 375°F (190°C).",
+                "Place the sliced eggplants on a baking sheet and brush both sides with olive oil. Roast in the preheated oven for 20-25 minutes, or until softened and slightly browned.",
+                "In a large skillet, cook ground lamb, chopped onion, and minced garlic over medium heat until the lamb is browned and the onion is softened.",
+                "Add diced tomatoes, tomato paste, dried oregano, ground cinnamon, ground nutmeg, salt, and black pepper to the skillet. Stir well to combine.",
+                "Simmer the lamb mixture for 10-15 minutes to allow the flavors to meld together.",
+                "In a greased baking dish, layer half of the roasted eggplant slices on the bottom.",
+                "Spread half of the lamb mixture over the eggplant.",
+                "Repeat the layers with the remaining eggplant and lamb mixture.",
+                "Pour béchamel sauce over the top layer and sprinkle grated Parmesan cheese on top.",
+                "Bake in the preheated oven for 45-50 minutes, or until the top is golden brown and bubbly.",
+                "Let it cool for a few minutes before serving."
+            ],
+            "serving_sizes": "6-8 servings",
+            "prep_time": "1 hour 30 minutes",
+            "image_url": "https://biancazapatka.com/wp-content/uploads/2020/07/moussaka-lasagne-auflauf-mit-auberginen.jpg"
+        },
+        {
+            "name": "Chicken Teriyaki",
+            "country": "Japan",
+            "flag": "🇯🇵",
+            "ingredients": [
+                "4 boneless, skinless chicken breasts",
+                "1/4 cup soy sauce",
+                "1/4 cup mirin",
+                "1/4 cup sake",
+                "2 tbsp sugar",
+                "1 tbsp vegetable oil",
+                "1 clove garlic, minced",
+                "1 tsp grated ginger",
+                "1 tbsp cornstarch",
+                "2 tbsp water",
+                "Sesame seeds",
+                "Sliced green onions"
+            ],
+            "steps": [
+                "In a small bowl, whisk together soy sauce, mirin, sake, and sugar until the sugar is dissolved. Set aside.",
+                "Heat vegetable oil in a large skillet over medium-high heat.",
+                "Add minced garlic and grated ginger to the skillet. Cook for 1 minute until fragrant.",
+                "Add the chicken breasts to the skillet and cook for 4-5 minutes per side, or until cooked through.",
+                "Pour the teriyaki sauce over the chicken in the skillet. Cook for an additional 1-2 minutes, or until the sauce thickens and coats the chicken.",
+                "In a separate small bowl, mix cornstarch and water to make a slurry.",
+                "Add the slurry to the skillet and stir well to combine. Cook for another minute until the sauce thickens further.",
+                "Remove from heat and let the chicken rest in the sauce for a few minutes.",
+                "Slice the chicken and garnish with sesame seeds and sliced green onions.",
+                "Serve hot with steamed rice or noodles."
+            ],
+            "serving_sizes": "4 servings",
+            "prep_time": "30 minutes",
+            "image_url": "https://www.budgetbytes.com/wp-content/uploads/2022/04/Teriyaki-Chicken-plate.jpg"
+        },
+        {
+            "name": "Goulash",
+            "country": "Hungary",
+            "flag": "🇭🇺",
+            "ingredients": [
+                "2 lbs beef chuck, cut into cubes",
+                "2 onions, chopped",
+                "2 cloves garlic, minced",
+                "2 red bell peppers, sliced",
+                "2 tbsp sweet paprika",
+                "1 tsp caraway seeds",
+                "1 cup beef broth",
+                "1 cup crushed tomatoes",
+                "2 tbsp vegetable oil",
+                "Salt",
+                "Black pepper",
+                "Sour cream",
+                "Chopped parsley"
+            ],
+            "steps": [
+                "In a large pot or Dutch oven, heat vegetable oil over medium heat.",
+                "Add chopped onions and minced garlic to the pot. Cook until the onions are translucent.",
+                "Add beef cubes to the pot and brown them on all sides.",
+                "Stir in sweet paprika and caraway seeds. Cook for 1-2 minutes to release the flavors.",
+                "Add sliced red bell peppers, beef broth, and crushed tomatoes to the pot. Season with salt and black pepper to taste.",
+                "Cover the pot and simmer over low heat for 2-3 hours, or until the beef is tender and the flavors have melded together.",
+                "Serve the goulash hot, garnished with a dollop of sour cream and chopped parsley.",
+                "Enjoy with crusty bread or dumplings."
+            ],
+            "serving_sizes": "4-6 servings",
+            "prep_time": "3 hours",
+            "image_url": "https://therecipecritic.com/wp-content/uploads/2022/01/american_goulash.jpg"
+        }
+    ]
+}
