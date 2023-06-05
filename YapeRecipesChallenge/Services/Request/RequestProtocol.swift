@@ -13,17 +13,22 @@ protocol RequestProtocol {
     var params: [String: Any] { get }
     var urlParams: [String: String?] { get }
     var requestType: RequestType { get }
+    func createURLRequest() throws -> URLRequest
 }
 
 /// Default implementation for RequestProtocol
 
 extension RequestProtocol {
     var host: String {
-        "\(Constants.Networking.baseURL)"
+        Constants.Networking.baseURL
     }
 
     var path: String {
-        "\(Constants.Networking.Endpoints.recipes)"
+        Constants.Networking.Endpoints.recipes
+    }
+
+    var headers: [String: String] {
+        [:]
     }
 
     var params: [String: Any] {
@@ -38,15 +43,17 @@ extension RequestProtocol {
         var components = URLComponents()
         components.scheme = "http"
         components.host = "demo4677561.mockable.io"
+        components.path = path
 
         if !urlParams.isEmpty {
             components.queryItems = urlParams.map({
                 URLQueryItem(name: $0, value: $1)
             })
         }
-        components.path = path
 
-        guard let url = components.url else {
+        guard
+            let url = components.url ?? URL(string: "https://demo4677561.mockable.io/recipes_world")
+        else {
             throw NetworkError.invalidURL
         }
 

@@ -36,12 +36,12 @@ class RequestManagerServiceTests: XCTestCase {
 
         // Then
         XCTAssertEqual(first?.name, "Pizza Margherita")
-        XCTAssertEqual(first?.country, "Italy")
+        XCTAssertEqual(first?.origin.country, "Italy")
         XCTAssertEqual(first?.ingredients.count, 6)
         XCTAssertEqual(first?.steps.count, 8)
 
         XCTAssertEqual(last?.name, "Goulash")
-        XCTAssertEqual(last?.country, "Hungary")
+        XCTAssertEqual(last?.origin.country, "Hungary")
         XCTAssertEqual(last?.ingredients.count, 13)
         XCTAssertEqual(last?.steps.count, 8)
     }

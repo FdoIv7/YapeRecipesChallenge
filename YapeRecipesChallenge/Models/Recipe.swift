@@ -14,8 +14,8 @@ struct RecipeResponse: Codable {
 struct Recipe: Codable, Identifiable {
     let id = UUID()
     let name: String
-    let country: String
-    let flagIcon: String
+    let description: String
+    let origin: RecipeOrigin
     let ingredients: [String]
     let steps: [String]
     let servings: String
@@ -23,24 +23,41 @@ struct Recipe: Codable, Identifiable {
     let imageURL: String
 
     enum CodingKeys: String, CodingKey {
-        case name, country, ingredients, steps
-        case flagIcon = "flag"
+        case name, ingredients, steps, description, origin
         case servings = "serving_sizes"
         case prepTime = "prep_time"
         case imageURL = "image_url"
     }
 }
 
+struct RecipeOrigin: Codable {
+    let country: String
+    let flagIcon: String
+    let city: String
+}
 /// Equatable extension for recipe, will help us compare recipes
+extension RecipeResponse: Equatable {
+    static func == (lhs: RecipeResponse, rhs: RecipeResponse) -> Bool {
+        return lhs.recipes == rhs.recipes
+    }
+}
+
 extension Recipe: Equatable {
     static func == (lhs: Recipe, rhs: Recipe) -> Bool {
         return lhs.name == rhs.name &&
-        lhs.country == rhs.country &&
-        lhs.flagIcon == rhs.flagIcon &&
+        lhs.origin == rhs.origin &&
         lhs.ingredients == rhs.ingredients &&
         lhs.servings == rhs.servings &&
         lhs.prepTime == rhs.prepTime &&
         lhs.imageURL == rhs.imageURL
+    }
+}
+
+extension RecipeOrigin: Equatable {
+    static func == (lhs: RecipeOrigin, rhs: RecipeOrigin) -> Bool {
+        return lhs.city == rhs.city &&
+        lhs.country == rhs.country &&
+        lhs.flagIcon == rhs.flagIcon
     }
 }
 /*

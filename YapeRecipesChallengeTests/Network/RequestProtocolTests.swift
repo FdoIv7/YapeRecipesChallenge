@@ -10,18 +10,18 @@ import XCTest
 @testable import YapeRecipesChallenge
 
 class RequestProtocolTests: XCTestCase {
-
+    
     var sut: RequestProtocol!
-
+    
     override func setUp() {
         super.setUp()
     }
-
+    
     override func tearDown() {
         sut = nil
         super.tearDown()
     }
-
+    
     struct MockRequest: RequestProtocol {
         let path: String = "/mock/path"
         let headers: [String : String] = ["Content-Type": "application/json"]
@@ -29,13 +29,13 @@ class RequestProtocolTests: XCTestCase {
         let urlParams: [String : String?] = [:]
         let requestType: RequestType = .GET
     }
-
+    
     func test_createURLRequest_success() {
         // Given
         sut = MockRequest()
         let exp = expectation(description: "Created URL Request Successfully")
         var requestResult: URLRequest!
-
+        
         // When
         do {
             requestResult = try sut.createURLRequest()
@@ -43,7 +43,7 @@ class RequestProtocolTests: XCTestCase {
         } catch {
             XCTFail("Unexpected error: \(error)")
         }
-
+        
         // Then
         wait(for: [exp], timeout: 1)
         XCTAssertNotNil(requestResult)
@@ -53,14 +53,36 @@ class RequestProtocolTests: XCTestCase {
         XCTAssertEqual(requestResult.httpMethod, "GET")
         XCTAssertEqual(requestResult.allHTTPHeaderFields?["Content-Type"], "application/json")
     }
-
+    
+    func test_createURLRequest_validURL() {
+        // Given
+        struct MockRequestForURL: RequestProtocol {
+            var requestType: RequestType {
+                .GET
+            }
+        }
+        let sut = MockRequestForURL()
+        var urlRequest: URLRequest!
+        
+        // When
+        do {
+            urlRequest = try sut.createURLRequest()
+        } catch {
+            XCTFail("Unexpected error: \(error)")
+        }
+        
+        // Then
+        XCTAssertNotNil(urlRequest.url)
+        XCTAssertEqual(urlRequest.url?.absoluteString, "https://demo4677561.mockable.io/recipes_world")
+    }
+    
     func test_requestParams() {
         // Given
         sut = MockRequest()
         var requestResult: URLRequest!
         var requestBody: Data!
         var parameters: [String: Any]!
-
+        
         // When
         do {
             requestResult = try sut.createURLRequest()
@@ -69,9 +91,9 @@ class RequestProtocolTests: XCTestCase {
                 with: requestBody,
                 options: []) as? [String: Any]
         } catch {
-            XCTFail("Unexepceted error: \(error)")
+            XCTFail("Unexpceted error: \(error)")
         }
-
+        
         // Then
         XCTAssertNotNil(requestResult)
         XCTAssertNotNil(requestBody)
@@ -82,13 +104,6 @@ class RequestProtocolTests: XCTestCase {
     func test_createURLRequest_failure() {
         // Given
         let exp = expectation(description: "Created invalid URL Request")
-        struct InvalidRequest: RequestProtocol {
-            let path: String = "Invalid path with spaces"
-            let headers: [String : String] = [:]
-            let params: [String : Any] = [:]
-            let urlParams: [String : String?] = [:]
-            let requestType: RequestType = .POST
-        }
         sut = InvalidRequest()
         var errorResult: Error!
 
@@ -101,5 +116,42 @@ class RequestProtocolTests: XCTestCase {
         wait(for: [exp], timeout: 1)
         XCTAssertNotNil(errorResult)
         XCTAssertEqual(errorResult as? NetworkError, NetworkError.invalidURL)
+    }
+
+    struct InvalidRequest: RequestProtocol {
+        let path: String = "Invalid path with spaces"
+        let headers: [String : String] = ["Content-Type": "application/json"]
+        let params: [String : Any] = [:]
+        let urlParams: [String : String?] = [:]
+        let requestType: RequestType = .POST
+
+        func createURLRequest() throws -> URLRequest {
+            var components = URLComponents()
+            components.scheme = "http"
+            components.host = "demo4677561.mockable.io"
+            components.path = path
+
+            if !urlParams.isEmpty {
+                components.queryItems = urlParams.map({
+                    URLQueryItem(name: $0, value: $1)
+                })
+            }
+
+            guard let url = components.url else {
+                throw NetworkError.invalidURL
+            }
+
+            var urlRequest = URLRequest(url: url)
+            urlRequest.httpMethod = requestType.rawValue
+
+            if !headers.isEmpty {
+                urlRequest.allHTTPHeaderFields = headers
+            }
+
+            if !params.isEmpty {
+                urlRequest.httpBody = try JSONSerialization.data(withJSONObject: params)
+            }
+            return urlRequest
+        }
     }
 }

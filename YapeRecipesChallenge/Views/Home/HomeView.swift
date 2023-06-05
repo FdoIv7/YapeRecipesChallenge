@@ -8,10 +8,33 @@
 import SwiftUI
 
 struct HomeView: View {
+
+    @ObservedObject private var viewModel = RecipesViewModel()
+    @EnvironmentObject private var imageLoader: ImageLoader
+    
     var body: some View {
         NavigationStack {
-            Text("My Recipes")
-                .navigationTitle("Recipes")
+            ScrollView {
+                VStack {
+                    if let recipes = viewModel.recipes {
+                        RecipeList(recipes: recipes)
+                    } else {
+                        RecipeCardView(recipe: nil)
+                    }
+                }
+            }
+            .navigationTitle("Recipes")
+        }
+        .tint(.white)
+        .onAppear {
+            getRecipes()
+        }
+    }
+
+    
+    private func getRecipes() {
+        Task {
+            try await viewModel.fetchWorldRecipes()
         }
     }
 }

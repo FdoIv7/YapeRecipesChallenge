@@ -118,8 +118,8 @@ class APIManagerServiceTests: XCTestCase {
     private func getMockRecipe() -> Recipe {
         return Recipe(
             name: "Pizza Margherita",
-            country: "Italy",
-            flagIcon: "🇮🇹",
+            description: "Indulge in the irresistible flavors of Pizza Margherita, a classic Italian masterpiece. This mouthwatering pizza features a thin and crispy crust topped with tangy tomato sauce, generous amounts of gooey mozzarella cheese, and a sprinkle of fresh basil leaves for a burst of freshness. Buon appetito!",
+            origin: RecipeOrigin(country: "Italy", flagIcon: "🇮🇹",city: "Rome"),
             ingredients: [
                 "1 pizza dough",
                 "1/2 cup tomato sauce",
@@ -140,7 +140,8 @@ class APIManagerServiceTests: XCTestCase {
             ],
             servings: "1 large pizza",
             prepTime: "30 minutes",
-            imageURL: "https://images.unsplash.com/photo-1598023696416-0193a0bcd302?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8UGl6emElMjBNYXJnaGVyaXRhfGVufDB8fDB8fHww&auto=format&fit=crop&w=900&q=60")
+            imageURL: "https://example.com/pizza_margherita.jpg"
+        )
     }
 
     private func getMockRequest() -> RequestProtocol {

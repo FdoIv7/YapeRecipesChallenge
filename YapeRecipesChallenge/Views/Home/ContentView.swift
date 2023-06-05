@@ -8,9 +8,12 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @StateObject private var imageLoader = ImageLoader()
+    
     var body: some View {
         HomeView()
-            .padding()
+            .environmentObject(imageLoader)
     }
 }
 
