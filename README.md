@@ -17,6 +17,7 @@ An app that shows recipes from all around the world and see where the recipe is 
 # Dependencies
 
 There are no third party libraries or dependecies being used for this project
+
 URL for recipes: http://demo4677561.mockable.io/recipes_world
 
 # Architecture 
