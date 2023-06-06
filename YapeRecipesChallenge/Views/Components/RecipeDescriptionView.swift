@@ -28,6 +28,7 @@ struct RecipeDescriptionView: View {
                     items: recipe.steps)
             }
         }
+        .foregroundColor(.white)
     }
 }
 

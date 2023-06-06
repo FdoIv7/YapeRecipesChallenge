@@ -19,7 +19,21 @@ struct MapView: View {
                 annotationItems: [viewModel.cityCoordinate].compactMap { $0 }) { location in
                     MapMarker(coordinate: location)
                 }
-                .ignoresSafeArea()
+                .edgesIgnoringSafeArea([
+                    .bottom,
+                    .leading,
+                    .trailing])
+                .background(LinearGradient(
+                    gradient:
+                        Gradient(
+                            colors: [
+                                Color(hex: "#5f92cb"),
+                                Color(hex: "#030f13")]),
+                    startPoint: .top,
+                    endPoint: .bottom)
+                    .edgesIgnoringSafeArea(.all))
+                .modifier(NavigationBarModifier(
+                    color: Color(hex: "#3C3190"), opacity: 0.4))
                 .onAppear {
                     setMarker()
                 }

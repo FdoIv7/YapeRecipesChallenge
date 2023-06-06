@@ -8,21 +8,25 @@
 import SwiftUI
 
 struct RecipeList: View {
-    var recipes: [Recipe]
+
+    @EnvironmentObject var viewModel: RecipesViewModel
     let otherRecipes = Recipe.stubbedRecipes
     
     var body: some View {
         VStack {
-            HStack {
-                Text("\(recipes.count) \(recipes.count > 1 ? "recipes" : "recipe")")
-                    .font(.headline)
-                    .fontWeight(.medium)
-                    .opacity(0.7)
-                Spacer()
-            }
+            TextField(
+                "Search recipe or ingredients",
+                text: $viewModel.searchText)
+                .padding()
+                .frame(height: 50)
+                .background(Color(.systemGray5))
+                .cornerRadius(10)
+                .padding(.top)
             LazyVGrid(columns: [GridItem(.adaptive(minimum: 160), spacing: 16)]) {
-                ForEach(recipes) { recipe in
-                    NavigationLink(destination: RecipeDetailView(recipe: recipe)) {
+                ForEach(viewModel.filteredRecipes()) { recipe in
+                    NavigationLink(
+                    destination: RecipeDetailView(
+                        recipe: recipe)) {
                         RecipeCardView(recipe: recipe)
                     }
                 }
@@ -36,7 +40,8 @@ struct RecipeList: View {
 struct RecipeList_Previews: PreviewProvider {
     static var previews: some View {
         ScrollView {
-            RecipeList(recipes: Recipe.stubbedRecipes)
+            RecipeList()
+                .environmentObject(RecipesViewModel())
         }
     }
 }

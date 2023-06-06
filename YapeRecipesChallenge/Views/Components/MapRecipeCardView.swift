@@ -54,9 +54,10 @@ struct MapRecipeCardView: View {
                     gradient: Gradient(
                         colors: [Color.gray.opacity(0.3), Color.gray]),
                     startPoint: .top, endPoint: .bottom))
-            .clipShape(RoundedRectangle(
-                cornerRadius: 20,
-                style: .continuous))
+            .clipShape(
+                RoundedRectangle(
+                    cornerRadius: 20,
+                    style: .continuous))
             .shadow(color: .black.opacity(0.3), radius: 15, x: 0, y: 10)
             .padding()
         }

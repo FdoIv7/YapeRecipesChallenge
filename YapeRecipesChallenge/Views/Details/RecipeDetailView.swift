@@ -39,13 +39,18 @@ struct RecipeDetailView: View {
                     startPoint: .top, endPoint: .bottom))
                 RecipeDescriptionView(recipe: recipe)
             }
-            .ignoresSafeArea(.container, edges: .top)
         }
+        .modifier(BackgroundGradient(
+            startColor: Color(hex: "#3C3190"),
+            endColor: Color(hex: "#120D38")))
+        .modifier(NavigationBarModifier(
+            color: Color(hex: "#3C3190"), opacity: 0.1))
+        .navigationBarTitleDisplayMode(.inline)
         .toolbar {
             NavigationLink(
                 destination: MapView(recipe: recipe)) {
-                Image(systemName: "map")
-            }
+                    Image(systemName: "map")
+                }
         }
     }
 }

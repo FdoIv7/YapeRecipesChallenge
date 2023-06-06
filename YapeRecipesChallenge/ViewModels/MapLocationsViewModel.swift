@@ -47,16 +47,3 @@ class MapLocationsViewModel: ObservableObject, MapLocationsService {
         }
     }
 }
-
-extension MKPointAnnotation: Identifiable {
-    public var id: UUID { UUID() }
-}
-
-struct MapAnnotationModel {
-    let coordinate: CLLocationCoordinate2D
-    let title: String
-}
-
-extension CLLocationCoordinate2D: Identifiable {
-    public var id: UUID { UUID() }
-}

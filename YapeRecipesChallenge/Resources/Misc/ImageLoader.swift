@@ -2,11 +2,10 @@
 //  ImageLoader.swift
 //  YapeRecipesChallenge
 //
-//  Created by Fernando Ives on 31/05/23.
+//  Created by Fernando Ives on 06/06/23.
 //
 
 import UIKit
-import SwiftUI
 
 private let _imageCache = NSCache<AnyObject, AnyObject>()
 
@@ -18,7 +17,7 @@ class ImageLoader: ObservableObject {
 
     func loadImage(with url: URL) async throws {
         let urlString = url.absoluteString
-        if let imageFromCache = self.imageCache.object(forKey: urlString as AnyObject) as? UIImage {
+        if let imageFromCache = imageCache.object(forKey: urlString as AnyObject) as? UIImage {
             await MainActor.run {
                 self.image = imageFromCache
             }
@@ -35,8 +34,8 @@ class ImageLoader: ObservableObject {
         } catch {
             throw ImageLoaderError.loadingError
         }
-        
     }
+    
 }
 
 enum ImageLoaderError: Error {

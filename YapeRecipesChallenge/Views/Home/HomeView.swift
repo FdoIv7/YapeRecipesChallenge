@@ -8,29 +8,42 @@
 import SwiftUI
 
 struct HomeView: View {
-
+    
     @ObservedObject private var viewModel = RecipesViewModel()
-    @EnvironmentObject private var imageLoader: ImageLoader
     
     var body: some View {
         NavigationStack {
             ScrollView {
                 VStack {
-                    if let recipes = viewModel.recipes {
-                        RecipeList(recipes: recipes)
+                    if let _ = viewModel.recipes {
+                        RecipeList()
+                            .environmentObject(viewModel)
                     } else {
-                        RecipeCardView(recipe: nil)
+                        Spacer()
+                        Text("Getting recipes...")
+                            .font(.headline)
+                            .foregroundColor(.white)
+                            .bold()
+                            .padding()
+                            .frame(maxWidth: .infinity)
+                        ProgressView()
                     }
                 }
             }
+            .scrollDismissesKeyboard(.immediately)
             .navigationTitle("Recipes")
+            .modifier(BackgroundGradient(
+                startColor: Color(hex: "#3C3190"),
+                endColor: Color(hex: "#120D38")))
+            .modifier(NavigationBarModifier(
+                color: Color(hex: "#3C3190"), opacity: 0.1))
         }
         .tint(.white)
         .onAppear {
             getRecipes()
         }
     }
-
+    
     
     private func getRecipes() {
         Task {

@@ -9,6 +9,7 @@ import Foundation
 
 class RecipesViewModel: ObservableObject {
     private let recipeService: RecipeRequestServiceProtocol
+    @Published var searchText = ""
     @Published var recipes: [Recipe]?
 
     init(recipeService: RecipeRequestServiceProtocol = RecipeStore.shared) {
@@ -22,6 +23,21 @@ class RecipesViewModel: ObservableObject {
             self.recipes = try await recipeService.getRecipes(from: RecipeRequest.getWorldRecipes).recipes
         } catch {
             throw DataError.noData
+        }
+    }
+
+    func filteredRecipes() -> [Recipe] {
+        guard let recipes = recipes else {
+            return []
+        }
+
+        if searchText.isEmpty {
+            return recipes
+        } else {
+            return recipes.filter { recipe in
+                recipe.name.localizedCaseInsensitiveContains(searchText) ||
+                recipe.ingredients.joined(separator: "").localizedCaseInsensitiveContains(searchText)
+            }
         }
     }
 }
